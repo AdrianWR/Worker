@@ -15,9 +15,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install tqdm
 
 COPY worker.py ./
-ENV PROJECT_ID		for-adrian
-ENV URL_TABLE_ID	urls.articles
-ENV DATA_TABLE_ID	mining.scielo
+
 
 ENTRYPOINT ["python", "./worker.py"]
-#CMD ["protein", "medicine", "virus", "20"]
