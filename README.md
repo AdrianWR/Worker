@@ -24,6 +24,7 @@ At the moment of running the container, it's required to set up some environment
     - `bigquery.jobs.create`
     - `bigquery.tables.create`
     - `bigquery.tables.get`
+    - `bigquery.tables.getData`
     - `bigquery.tables.updateData`
 
 To run the container on its own, it's possible to use the following command:
