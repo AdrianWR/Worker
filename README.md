@@ -1,4 +1,4 @@
-# AIvsCOVID19  URL Builder
+# AIvsCOVID19 Site Worker
 
 ## Motivation
 This repository contains a simple setup to create a *Worker* instance to act in the context of Data Mining workflow in the AIvsCOVID19 project. The Site Worker is a special type of data mining Python script; given a table on the BigQuery with links to scientific articles on the web, the ` `e `Worker` will iterate through each record and then mine valuable information from each article, sending the results to another BigQuery table.
@@ -31,7 +31,7 @@ To run the container on its own, it's possible to use the following command:
     docker run --rm -d
     --env PROJECT_ID="my-project"
     --env URL_TABLE_ID="my-url-dataset.my-links"
-    --env DATATABLE_ID="my-data-dataset.my-website"
+    --env DATA_TABLE_ID="my-data-dataset.my-website"
     --env GOOGLE_APPLICATION_CREDENTIALS=/credentials.json
     --mount type=bind,source="$(pwd)"/credentials.json,target=/credentials.json,readonly
     IMAGE_NAME LIMIT
